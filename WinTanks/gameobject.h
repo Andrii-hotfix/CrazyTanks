@@ -9,14 +9,18 @@ public:
     GameObject(int x, int y, int width, int length);
 
     int getWidth() const;
-    int getHeigth() const;
+    int getLength() const;
     int getX() const;
     int getY() const;
 
-    virtual void rotate();
+    void redraw();
 
 protected:
-    BOOL setXY(int x, int y);
+    BOOL setCursor(int x, int y);
+    void setX(int newX);
+    void setY(int newY);
+    void setWidth(int newWidth);
+    void setLength(int newLength);
     void draw();
     void destroy();
 

@@ -9,9 +9,12 @@ class Game
 public:
     Game();
     void exec();
+    bool intersects(int ax, int ay, int ax1, int ay1,
+                    int bx, int by, int bx1, int by1);
 
 private:
-    Wall* walls;
+    Map map;
+    Wall* walls[5];
 };
 
 #endif // GAME_H

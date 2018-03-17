@@ -5,7 +5,17 @@ Project {
 
     CppApplication {
         consoleApplication: true
-        files: "main.cpp"
+        files: [
+            "game.cpp",
+            "game.h",
+            "gameobject.cpp",
+            "gameobject.h",
+            "main.cpp",
+            "map.cpp",
+            "map.h",
+            "wall.cpp",
+            "wall.h",
+        ]
 
         Group {     // Properties for the produced executable
             fileTagsFilter: "application"

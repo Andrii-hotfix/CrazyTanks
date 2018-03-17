@@ -1,4 +1,5 @@
 #include "wall.h"
+#include <iostream>
 
 Wall::Wall(int x, int y, int length) :
     GameObject(x, y, wallWidth, length)
@@ -7,10 +8,16 @@ Wall::Wall(int x, int y, int length) :
 }
 
 void Wall::rotate()
+{    
+    destroy();
+    int width = getWidth();
+    int length = getLength();
+    setWidth(length * 2);
+    setLength(width / 2);
+    draw();
+}
+
+Wall::~Wall()
 {
     destroy();
-    int tmp = x;
-    x = y;
-    y = tmp;
-    draw();
 }
