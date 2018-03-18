@@ -13,6 +13,8 @@ Project {
             "main.cpp",
             "map.cpp",
             "map.h",
+            "tank.cpp",
+            "tank.h",
             "wall.cpp",
             "wall.h",
         ]

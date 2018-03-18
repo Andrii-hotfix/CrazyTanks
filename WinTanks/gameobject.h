@@ -17,12 +17,12 @@ public:
 
 protected:
     BOOL setCursor(int x, int y);
-    void setX(int newX);
-    void setY(int newY);
     void setWidth(int newWidth);
     void setLength(int newLength);
-    void draw();
-    void destroy();
+    void setX(int newX);
+    void setY(int newY);
+    virtual void draw();
+    virtual void destroy();
 
 private:
     int x;

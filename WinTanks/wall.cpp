@@ -21,3 +21,5 @@ Wall::~Wall()
 {
     destroy();
 }
+
+

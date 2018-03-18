@@ -83,11 +83,13 @@ int GameObject::getY() const
 void GameObject::setX(int newX)
 {
     x = newX;
+    redraw();
 }
 
 void GameObject::setY(int newY)
 {
     y = newY;
+    redraw();
 }
 
 void GameObject::setLength(int newLength)

@@ -10,6 +10,5 @@ using namespace std;
 int main()
 {
     Game game;
-    game.exec();
     return 0;
 }
