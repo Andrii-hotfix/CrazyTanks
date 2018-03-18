@@ -5,3 +5,8 @@ Map::Map(int width, int heigth) :
 {
     draw();
 }
+
+Map::~Map()
+{
+    destroy();
+}

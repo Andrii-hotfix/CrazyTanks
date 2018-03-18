@@ -6,10 +6,16 @@
 class Tank : public GameObject
 {
 public:
-    Tank(int x, int y);
+    Tank(int x, int y, char paint);
+    ~Tank();
+    void redraw();
 
 protected:
-    draw() override;
+    void draw();
+    void destroy();
+
+private:
+    char paint;
 };
 
 #endif // TANK_H

@@ -7,6 +7,7 @@ class GameObject
 {
 public:
     GameObject(int x, int y, int width, int length);
+    GameObject();
 
     int getWidth() const;
     int getLength() const;

@@ -35,6 +35,7 @@ void GameObject::draw()
         setCursor(x + width, i);
         cout << char(186);
     }
+    setCursor(0, 26);
 }
 
 void GameObject::destroy()
