@@ -10,7 +10,7 @@ using namespace std;
 Game::Game() :
     map(new Map(60, 25))
 {
-    srand(time(nullptr));
+    srand(time(NULL));
     int heroX = (map->getX() + map->getWidth()) / 2;
     int heroY = map->getY() + map->getLength() - 3;
     hero = new Tank(heroX, heroY, HERO_PAINT);
